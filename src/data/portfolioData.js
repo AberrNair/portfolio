@@ -201,8 +201,7 @@ export const leadershipData = {
         "Staying alert and responsible"
       ],
       description: "As a member of the Security Core for our cultural festival, I helped manage the security arrangements for one of the busiest events on campus. The role needed calm judgement, quick responses and constant coordination with other teams, so that everyone could enjoy the festival safely.",
-      icon: "Shield",
-      image: "/images/cultural_fest_team.jpg"
+      icon: "Shield"
     },
     {
       id: "sih-2025",
@@ -243,6 +242,7 @@ export const athletePhotos = {
   travelHeritage: "/images/travel_bom_jesus_goa.jpg",
   travelCoastline: "/images/travel_coastline_goa.jpg",
   culturalFestTeam: "/images/cultural_fest_team.jpg",
+  podiumSpeech: "/images/abeer_podium_presentation.jpg",
   cookingDish: "/images/home_cooking_curry.jpg",
 };
 

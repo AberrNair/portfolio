@@ -71,6 +71,27 @@ export default function People() {
                 </div>
               )}
 
+              {idx === 1 && (
+                <div className="mt-4 rounded-xl overflow-hidden border border-amber-500/30 group/img bg-black shadow-md">
+                  <div className="relative aspect-[16/9] max-h-[170px]">
+                    <img
+                      src="/images/abeer_podium_presentation.jpg"
+                      alt="Abeer Nair addressing audience at NMIMS MPSTME podium"
+                      className="w-full h-full object-cover object-top group-hover/img:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                    <div className="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between">
+                      <span className="text-[10px] font-cinzel font-bold text-amber-300">
+                        NMIMS MPSTME Podium • Event Address
+                      </span>
+                      <span className="text-[9px] font-cinzel text-amber-400 bg-black/70 px-2 py-0.5 rounded-full border border-amber-500/30">
+                        Public Speaking
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               <div className="mt-5 pt-3 border-t border-amber-500/15 flex items-center justify-between text-xs font-cinzel font-semibold text-amber-300">
                 <span>{idx === 0 ? "Natural Extrovert" : "Effective Communicator"}</span>
                 <span className="bg-amber-500/10 px-2.5 py-0.5 rounded-full border border-amber-500/30">

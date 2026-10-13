@@ -108,7 +108,7 @@ export default function Hero() {
                 <span>The Realm of Non-Academic Pursuits</span>
               </div>
               <h1 className="font-cinzel font-black text-4xl sm:text-5xl md:text-6xl tracking-tight leading-tight">
-                Hi, I'm <span className="text-gold-gradient underline decoration-amber-500/40 decoration-wavy underline-offset-8">Abeer Nair</span>
+                <span className="text-gold-gradient underline decoration-amber-500/40 decoration-wavy underline-offset-8">Abeer Nair</span>
               </h1>
               <p className="text-base sm:text-lg text-slate-300 font-medium max-w-2xl leading-relaxed font-body">
                 {personalInfo.education.degree}{" "}
