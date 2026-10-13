@@ -3,9 +3,16 @@ import { Trophy, Swords, Sparkles, MapPin, Flame, Dumbbell, Compass } from 'luci
 import { athletePhotos } from '../data/portfolioData';
 
 export default function HeroAthleteCard() {
-  const [activePhoto, setActivePhoto] = useState('match');
+  const [activePhoto, setActivePhoto] = useState('trophy');
 
   const photos = {
+    trophy: {
+      url: athletePhotos.trophyWinner,
+      title: "Yuva Sports 2026 Champion",
+      subtitle: "NMIMS Table Tennis Winner • Trophy Presentation",
+      tag: "Gold Champion",
+      icon: Trophy,
+    },
     match: {
       url: athletePhotos.heroAction,
       title: "Table Tennis Match Day",
@@ -80,7 +87,19 @@ export default function HeroAthleteCard() {
           <span className="text-[10px] font-cinzel font-bold text-slate-400 uppercase tracking-widest hidden sm:inline">
             Switch View:
           </span>
-          <div className="flex items-center gap-1.5 w-full sm:w-auto justify-end">
+          <div className="flex items-center gap-1.5 w-full sm:w-auto justify-end flex-wrap">
+            <button
+              onClick={() => setActivePhoto('trophy')}
+              className={`px-2.5 py-1 rounded-lg text-[10px] font-cinzel font-bold tracking-wider transition-all flex items-center gap-1 ${
+                activePhoto === 'trophy'
+                  ? 'bg-amber-500 text-black shadow-xs font-black'
+                  : 'bg-[#080B11] text-slate-300 hover:text-amber-300 border border-amber-500/20'
+              }`}
+            >
+              <Trophy className="w-3 h-3" />
+              <span>Trophy</span>
+            </button>
+
             <button
               onClick={() => setActivePhoto('match')}
               className={`px-2.5 py-1 rounded-lg text-[10px] font-cinzel font-bold tracking-wider transition-all flex items-center gap-1 ${

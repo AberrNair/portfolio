@@ -115,7 +115,8 @@ export const sportsData = {
       meaning: "Proof that consistent practice pays off",
       takeaway: "Championship victory through daily practice and tactical focus",
       icon: "Trophy",
-      year: "2026"
+      year: "2026",
+      image: "/images/yuva_sports_trophy_winner.jpg"
     }
   ],
   teamSports: {
@@ -200,7 +201,8 @@ export const leadershipData = {
         "Staying alert and responsible"
       ],
       description: "As a member of the Security Core for our cultural festival, I helped manage the security arrangements for one of the busiest events on campus. The role needed calm judgement, quick responses and constant coordination with other teams, so that everyone could enjoy the festival safely.",
-      icon: "Shield"
+      icon: "Shield",
+      image: "/images/cultural_fest_team.jpg"
     },
     {
       id: "sih-2025",
@@ -234,9 +236,13 @@ export const leadershipData = {
 
 export const athletePhotos = {
   heroAction: "/images/table_tennis_match.jpg",
+  trophyWinner: "/images/yuva_sports_trophy_winner.jpg",
   gymTraining: "/images/abeer_gym_training.jpg",
   physiqueConditioning: "/images/abeer_physique_conditioning.jpg",
   travelPortrait: "/images/abeer_travel_portrait.jpg",
+  travelHeritage: "/images/travel_bom_jesus_goa.jpg",
+  travelCoastline: "/images/travel_coastline_goa.jpg",
+  culturalFestTeam: "/images/cultural_fest_team.jpg",
   cookingDish: "/images/home_cooking_curry.jpg",
 };
 
@@ -289,11 +295,25 @@ export const travelAndCookingData = {
   },
   galleryPlaceholders: [
     {
-      image: "/images/abeer_travel_portrait.jpg",
-      category: "Travel Expedition",
-      caption: "Waters, Hills & Changing Horizons",
-      sub: "Stepping outside routines & connecting with people along the way",
-      icon: "Mountain"
+      image: "/images/yuva_sports_trophy_winner.jpg",
+      category: "Collegiate Champion",
+      caption: "Winner • NMIMS Yuva Sports 2026",
+      sub: "Proof that consistent daily practice and tactical focus pay off",
+      icon: "Trophy"
+    },
+    {
+      image: "/images/cultural_fest_team.jpg",
+      category: "Campus Leadership",
+      caption: "Cultural Fest Core Team",
+      sub: "Security Core Member managing safety and coordination for campus festival",
+      icon: "Users"
+    },
+    {
+      image: "/images/travel_bom_jesus_goa.jpg",
+      category: "Heritage & Wonder",
+      caption: "Basilica of Bom Jesus, Old Goa",
+      sub: "Exploring historic architecture, ancient world heritage, and new horizons",
+      icon: "Compass"
     },
     {
       image: "/images/home_cooking_curry.jpg",
@@ -304,17 +324,17 @@ export const travelAndCookingData = {
     },
     {
       image: "/images/table_tennis_match.jpg",
-      category: "Table Tennis Tournament",
+      category: "Tournament Action",
       caption: "Match Point in the Arena",
       sub: "Split-second decisions, focus, and performing under tournament pressure",
-      icon: "Trophy"
+      icon: "Swords"
     },
     {
-      image: "/images/abeer_gym_training.jpg",
-      category: "The Training Forge",
-      caption: "Daily Conditioning & Discipline",
-      sub: "Building athletic endurance, rotational power, and mental calmness",
-      icon: "Dumbbell"
+      image: "/images/travel_coastline_goa.jpg",
+      category: "Coastal Expedition",
+      caption: "Ocean Horizons & Seaside Trails",
+      sub: "Stepping outside routines and embracing new perspectives on the road",
+      icon: "Mountain"
     }
   ]
 };

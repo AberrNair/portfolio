@@ -57,27 +57,39 @@ export default function TravelCooking() {
                 {travel.intro}
               </p>
 
-              {/* Featured Travel Photo */}
-              <div className="relative rounded-xl overflow-hidden border border-amber-500/30 mb-6 group bg-black shadow-md">
-                <div className="relative aspect-[16/9] max-h-[220px]">
+              {/* Dual Travel Photo Showcase */}
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                <div className="relative rounded-xl overflow-hidden border border-amber-500/30 group bg-black shadow-md aspect-[4/3]">
                   <img
-                    src="/images/abeer_travel_portrait.jpg"
-                    alt="Abeer Nair - Exploring new waters and horizons"
+                    src="/images/travel_bom_jesus_goa.jpg"
+                    alt="Abeer Nair - Basilica of Bom Jesus, Old Goa"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <span className="text-[9px] font-cinzel font-bold text-amber-400 uppercase tracking-wider block">
+                      Heritage Wonder
+                    </span>
+                    <p className="font-cinzel font-bold text-[11px] text-white truncate">
+                      Basilica of Bom Jesus
+                    </p>
+                  </div>
+                </div>
+
+                <div className="relative rounded-xl overflow-hidden border border-amber-500/30 group bg-black shadow-md aspect-[4/3]">
+                  <img
+                    src="/images/travel_coastline_goa.jpg"
+                    alt="Abeer Nair - Coastal Promenade & Sea Horizons"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                    <div>
-                      <span className="text-[10px] font-cinzel font-bold text-amber-400 uppercase tracking-wider block">
-                        On The Water & Trails
-                      </span>
-                      <p className="font-cinzel font-bold text-xs sm:text-sm text-white">
-                        Exploring New Horizons & Cultures
-                      </p>
-                    </div>
-                    <span className="text-[10px] font-cinzel text-amber-300 bg-black/70 px-2 py-0.5 rounded-full border border-amber-500/30">
-                      Step Outside Routine
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-2 left-2 right-2">
+                    <span className="text-[9px] font-cinzel font-bold text-amber-400 uppercase tracking-wider block">
+                      Coastal Horizons
                     </span>
+                    <p className="font-cinzel font-bold text-[11px] text-white truncate">
+                      Ocean & Trails
+                    </p>
                   </div>
                 </div>
               </div>
@@ -228,7 +240,7 @@ export default function TravelCooking() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryPlaceholders.map((item, idx) => (
               <div
                 key={idx}

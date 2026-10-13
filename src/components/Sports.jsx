@@ -105,6 +105,28 @@ export default function Sports() {
                       "{item.meaning}"
                     </p>
                   </div>
+
+                  {/* Photo attachment if available */}
+                  {item.image && (
+                    <div className="mt-4 rounded-xl overflow-hidden border border-amber-500/30 group/img bg-black shadow-md">
+                      <div className="relative aspect-[16/9] sm:aspect-[21/9] max-h-[220px]">
+                        <img
+                          src={item.image}
+                          alt={item.achievement}
+                          className="w-full h-full object-cover object-top group-hover/img:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+                        <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between">
+                          <span className="text-[11px] font-cinzel font-bold text-amber-300">
+                            Trophy Presentation • SVKM Yuva Sports Festival
+                          </span>
+                          <span className="text-[10px] font-cinzel text-amber-400 bg-black/70 px-2 py-0.5 rounded-full border border-amber-500/30">
+                            Championship Gold
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
