@@ -4,74 +4,67 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        teal: {
-          primary: '#0F766E',
-          deep: '#134E4A',
-          dark: '#0B4F4A',
-          light: '#14B8A6',
-          pale: '#CCFBF1',
-          surface: '#115E59',
-        },
-        coral: {
-          DEFAULT: '#FF6B4A',
-          hover: '#E85535',
-          light: '#FFEBE6',
-          dark: '#D94826',
-        },
-        saffron: {
-          DEFAULT: '#FFB703',
-          light: '#FFF6D6',
-          dark: '#D99800',
-        },
-        cream: {
-          DEFAULT: '#FFF8F0',
-          muted: '#F6EEDB',
-          card: '#FFFFFF',
-          subtle: '#FAF3E8',
-        },
-        ink: {
-          DEFAULT: '#1F2937',
-          muted: '#4B5563',
-          light: '#6B7280',
-        },
+        got: {
+          bg: '#080B11',
+          'bg-dark': '#040609',
+          'bg-alt': '#0D131F',
+          surface: '#0F172A',
+          card: '#111827',
+          'card-glass': 'rgba(17, 24, 39, 0.75)',
+          'card-hover': '#1A2338',
+          gold: '#F59E0B',
+          'gold-light': '#FDE68A',
+          'gold-dark': '#B45309',
+          crimson: '#DC2626',
+          'crimson-dark': '#991B1B',
+          fire: '#FF4500',
+          amber: '#D97706',
+          steel: '#94A3B8',
+          silver: '#E2E8F0',
+          border: 'rgba(245, 158, 11, 0.22)',
+          'border-bright': 'rgba(245, 158, 11, 0.45)',
+        }
       },
       fontFamily: {
-        heading: ['"Space Grotesk"', 'Poppins', 'sans-serif'],
+        cinzel: ['"Cinzel"', 'serif'],
+        'cinzel-dec': ['"Cinzel Decorative"', 'serif'],
+        heading: ['"Cinzel"', '"Space Grotesk"', 'serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
-        'card': '20px',
+        'card': '18px',
         'card-lg': '24px',
-        'card-xl': '28px',
       },
       boxShadow: {
-        'soft': '0 8px 30px -4px rgba(19, 78, 74, 0.08)',
-        'warm': '0 10px 30px -4px rgba(255, 107, 74, 0.12)',
-        'teal-glow': '0 10px 30px -4px rgba(15, 118, 110, 0.25)',
-        'card-hover': '0 16px 36px -6px rgba(19, 78, 74, 0.16)',
+        'gold-glow': '0 0 25px rgba(245, 158, 11, 0.22)',
+        'gold-glow-lg': '0 0 40px rgba(245, 158, 11, 0.35)',
+        'crimson-glow': '0 0 25px rgba(220, 38, 38, 0.25)',
+        'card-got': '0 10px 30px -5px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(245, 158, 11, 0.18)',
+        'card-got-hover': '0 18px 45px -5px rgba(0, 0, 0, 0.95), 0 0 25px rgba(245, 158, 11, 0.35)',
       },
       keyframes: {
-        bouncePaddle: {
-          '0%, 100%': { transform: 'translateY(0) scale(1, 1)' },
-          '45%': { transform: 'translateY(-24px) scale(0.96, 1.04)' },
-          '90%': { transform: 'translateY(0) scale(1.08, 0.92)' },
+        flicker: {
+          '0%, 100%': { opacity: '0.9', transform: 'scale(1)' },
+          '50%': { opacity: '0.65', transform: 'scale(0.98)' },
         },
-        pulseGlow: {
-          '0%, 100%': { opacity: '0.4' },
-          '50%': { opacity: '0.8' },
+        floatEmber: {
+          '0%': { transform: 'translateY(0) translateX(0) scale(1)', opacity: '0.8' },
+          '50%': { transform: 'translateY(-120px) translateX(15px) scale(0.7)', opacity: '0.4' },
+          '100%': { transform: 'translateY(-240px) translateX(-10px) scale(0.2)', opacity: '0' },
         },
-        floatSlow: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-8px)' },
+        dragonPulse: {
+          '0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+          '50%': { opacity: '0.6', transform: 'scale(1.08)' },
         }
       },
       animation: {
-        'bounce-ball': 'bouncePaddle 1.8s cubic-bezier(0.28, 0.84, 0.42, 1) infinite',
-        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
-        'float': 'floatSlow 5s ease-in-out infinite',
+        'flicker': 'flicker 3s ease-in-out infinite',
+        'float-ember': 'floatEmber 6s linear infinite',
+        'dragon-pulse': 'dragonPulse 5s ease-in-out infinite',
       }
     },
   },
