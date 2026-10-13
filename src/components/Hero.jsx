@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { personalInfo, heroStats } from '../data/portfolioData';
-import BouncingBallHero from './BouncingBallHero';
+import HeroAthleteCard from './HeroAthleteCard';
 import IconHelper from './IconHelper';
 import { ArrowDown, Send, Sparkles, MapPin, Swords, Shield, Crown, Flame } from 'lucide-react';
 
@@ -148,8 +148,8 @@ export default function Hero() {
           {/* Interactive Arena Column */}
           <div className="lg:col-span-5 flex flex-col items-center justify-center">
             <div className="w-full flex flex-col items-center">
-              {/* Table tennis tournament arena */}
-              <BouncingBallHero />
+              {/* Athlete Action Card */}
+              <HeroAthleteCard />
 
               {/* Campus Location Chip */}
               <div className="mt-4 flex items-center gap-2 text-xs text-amber-300/90 bg-[#111827]/90 px-4 py-1.5 rounded-full border border-amber-500/25 shadow-md">

@@ -44,6 +44,31 @@ export default function Sports() {
             </p>
           </div>
 
+          {/* Live Tournament Action Photo Banner */}
+          <div className="relative rounded-2xl overflow-hidden border border-amber-500/30 mb-10 shadow-lg group">
+            <div className="relative aspect-[16/9] sm:aspect-[21/9] max-h-[380px] bg-black">
+              <img
+                src="/images/table_tennis_match.jpg"
+                alt="Abeer Nair competing in Table Tennis match at NMIMS Arena"
+                className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent pointer-events-none" />
+              <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+                <div>
+                  <span className="text-[10px] font-cinzel font-bold text-amber-400 uppercase tracking-widest block mb-1">
+                    Tournament Arena • Live Action
+                  </span>
+                  <p className="font-cinzel font-bold text-base sm:text-lg text-white">
+                    Competing Under Match-Point Pressure
+                  </p>
+                </div>
+                <div className="shrink-0 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-amber-500/30 text-[11px] font-cinzel text-amber-300">
+                  <span>SVKM's NMIMS MPSTME Arena</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Vertical Tournament Scroll Timeline */}
           <div className="relative border-l-2 border-amber-500/40 ml-4 sm:ml-8 pl-6 sm:pl-10 space-y-10">
             {sportsData.timeline.map((item) => (

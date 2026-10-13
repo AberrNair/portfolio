@@ -57,6 +57,31 @@ export default function TravelCooking() {
                 {travel.intro}
               </p>
 
+              {/* Featured Travel Photo */}
+              <div className="relative rounded-xl overflow-hidden border border-amber-500/30 mb-6 group bg-black shadow-md">
+                <div className="relative aspect-[16/9] max-h-[220px]">
+                  <img
+                    src="/images/abeer_travel_portrait.jpg"
+                    alt="Abeer Nair - Exploring new waters and horizons"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                    <div>
+                      <span className="text-[10px] font-cinzel font-bold text-amber-400 uppercase tracking-wider block">
+                        On The Water & Trails
+                      </span>
+                      <p className="font-cinzel font-bold text-xs sm:text-sm text-white">
+                        Exploring New Horizons & Cultures
+                      </p>
+                    </div>
+                    <span className="text-[10px] font-cinzel text-amber-300 bg-black/70 px-2 py-0.5 rounded-full border border-amber-500/30">
+                      Step Outside Routine
+                    </span>
+                  </div>
+                </div>
+              </div>
+
               {/* Trait Cards */}
               <div className="space-y-4">
                 {travel.traits.map((trait) => (
@@ -108,6 +133,31 @@ export default function TravelCooking() {
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-6 font-body">
                 {cooking.intro}
               </p>
+
+              {/* Featured Cooking Photo */}
+              <div className="relative rounded-xl overflow-hidden border border-amber-500/30 mb-6 group bg-black shadow-md">
+                <div className="relative aspect-[16/9] max-h-[220px]">
+                  <img
+                    src="/images/home_cooking_curry.jpg"
+                    alt="Abeer Nair - Slow-simmered home-cooked chicken curry"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none" />
+                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                    <div>
+                      <span className="text-[10px] font-cinzel font-bold text-amber-400 uppercase tracking-wider block">
+                        Signature Hearth Creation
+                      </span>
+                      <p className="font-cinzel font-bold text-xs sm:text-sm text-white">
+                        Slow-Simmered Chicken Curry
+                      </p>
+                    </div>
+                    <span className="text-[10px] font-cinzel text-amber-300 bg-black/70 px-2 py-0.5 rounded-full border border-amber-500/30">
+                      Patience & Spices
+                    </span>
+                  </div>
+                </div>
+              </div>
 
               {/* Trait Cards */}
               <div className="space-y-4">
@@ -161,7 +211,7 @@ export default function TravelCooking() {
           </div>
         </div>
 
-        {/* Placeholder Photo Strip / Gallery Area */}
+        {/* Photo Strip / Gallery Area */}
         <div>
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -169,12 +219,12 @@ export default function TravelCooking() {
                 Curiosity in Frames
               </h3>
               <p className="text-xs text-slate-400 font-body">
-                Clean photo strip placeholders ready for travel journeys and culinary creations
+                Visual journal spanning competitive arenas, daily conditioning, travels, and home cooking
               </p>
             </div>
             <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-cinzel font-semibold text-amber-300 bg-[#111827] px-3.5 py-1.5 rounded-full border border-amber-500/30 shadow-xs">
               <Camera className="w-3.5 h-3.5 text-amber-400" />
-              <span>Replaceable Visuals</span>
+              <span>Authentic Visual Journal</span>
             </span>
           </div>
 
@@ -184,20 +234,35 @@ export default function TravelCooking() {
                 key={idx}
                 className="group relative rounded-card overflow-hidden bg-[#111827] border border-amber-500/25 shadow-card-got hover:shadow-card-got-hover hover:-translate-y-1.5 transition-all duration-300 flex flex-col"
               >
-                {/* Visual Placeholder Frame */}
-                <div className="relative aspect-[4/3] bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#080B11] flex flex-col items-center justify-center p-6 text-center text-white overflow-hidden border-b border-amber-500/20">
-                  <div className="w-12 h-12 rounded-2xl bg-black/60 border border-amber-500/30 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                    <IconHelper name={item.icon} className="w-6 h-6 text-amber-400" />
-                  </div>
-                  <span className="text-[11px] font-cinzel font-bold text-amber-300 uppercase tracking-wider">
-                    {item.category}
-                  </span>
-                  <span className="text-[10px] text-slate-400 mt-0.5 font-cinzel">
-                    Tap to upload custom photo
-                  </span>
+                {/* Visual Image Frame */}
+                <div className="relative aspect-[4/3] bg-black overflow-hidden border-b border-amber-500/20">
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={item.caption}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#080B11] flex flex-col items-center justify-center p-6 text-center text-white">
+                      <div className="w-12 h-12 rounded-2xl bg-black/60 border border-amber-500/30 flex items-center justify-center mb-2">
+                        <IconHelper name={item.icon} className="w-6 h-6 text-amber-400" />
+                      </div>
+                      <span className="text-[11px] font-cinzel font-bold text-amber-300 uppercase tracking-wider">
+                        {item.category}
+                      </span>
+                    </div>
+                  )}
 
-                  {/* Gradient shimmer overlay */}
-                  <div className="absolute inset-0 bg-amber-400/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                  {/* Gradient vignette overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
+
+                  {/* Category Pill Tag */}
+                  <div className="absolute top-2.5 left-2.5">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-black/75 border border-amber-500/40 text-[10px] font-cinzel font-bold text-amber-300 backdrop-blur-sm shadow-xs">
+                      <IconHelper name={item.icon} className="w-3 h-3 text-amber-400" />
+                      <span>{item.category}</span>
+                    </span>
+                  </div>
                 </div>
 
                 {/* Caption Bar */}

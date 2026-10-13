@@ -38,36 +38,31 @@ export default function About() {
               <div className="absolute -inset-3 rounded-card-lg bg-gradient-to-tr from-amber-500 via-red-600 to-amber-700 opacity-25 blur-lg" />
               
               <div className="relative bg-[#111827] rounded-card-lg p-4 border border-amber-500/30 shadow-card-got hover:-translate-y-1.5 transition-transform duration-300">
-                {/* Visual Photo Placeholder Frame */}
-                <div className="relative aspect-[4/5] rounded-card bg-gradient-to-br from-[#1E293B] via-[#0F172A] to-[#080B11] overflow-hidden flex flex-col items-center justify-center p-6 text-center text-white border-2 border-dashed border-amber-500/30 group">
-                  
-                  {/* Sigil Monogram Icon */}
-                  <div className="relative z-10 w-24 h-24 rounded-full bg-gradient-to-br from-amber-400 via-amber-600 to-amber-900 border-2 border-amber-300 flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(245,158,11,0.4)] group-hover:scale-105 transition-transform duration-300">
-                    <span className="font-cinzel font-black text-3xl text-black">
-                      AN
-                    </span>
+                {/* Visual Photo Card */}
+                <div className="relative aspect-[4/5] rounded-card bg-black overflow-hidden border border-amber-500/30 group shadow-inner">
+                  <img
+                    src="/images/abeer_travel_portrait.jpg"
+                    alt="Abeer Nair - Athlete, Organiser, Traveller, Home Cook"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+
+                  {/* Dark Vignette Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent pointer-events-none" />
+
+                  {/* Bottom Text Overlay */}
+                  <div className="absolute bottom-4 left-4 right-4 text-left">
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-black/60 text-[10px] font-cinzel font-bold text-amber-300 border border-amber-500/30 mb-1.5">
+                      <Trophy className="w-3 h-3 text-amber-400" />
+                      <span>Yuva Sports 2026 Champion</span>
+                    </div>
+
+                    <h3 className="font-cinzel font-bold text-xl text-gold-gradient drop-shadow-md">
+                      {personalInfo.name}
+                    </h3>
+                    <p className="text-xs text-slate-300 font-cinzel tracking-wider drop-shadow-sm mt-0.5">
+                      National Table Tennis • Event Organiser • Traveller
+                    </p>
                   </div>
-
-                  <h3 className="relative z-10 font-cinzel font-bold text-xl text-gold-gradient">
-                    {personalInfo.name}
-                  </h3>
-                  <p className="relative z-10 text-xs text-slate-300 mt-1 max-w-[220px] font-cinzel tracking-wider">
-                    National Table Tennis Player • College Event Organiser • Extrovert
-                  </p>
-
-                  <div className="relative z-10 mt-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 text-[11px] font-cinzel font-semibold text-amber-300 border border-amber-500/30">
-                    <Trophy className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Yuva Sports 2026 Winner</span>
-                  </div>
-
-                  {/* Clean Placeholder Note */}
-                  <div className="relative z-10 mt-6 pt-3 border-t border-amber-500/20 text-[10px] font-cinzel uppercase tracking-widest text-slate-400">
-                    Replaceable Profile Photo Area
-                  </div>
-
-                  {/* Ambient runes in background */}
-                  <div className="absolute -bottom-8 -right-8 w-36 h-36 rounded-full bg-amber-500/5 pointer-events-none" />
-                  <div className="absolute -top-8 -left-8 w-32 h-32 rounded-full bg-red-600/5 pointer-events-none" />
                 </div>
 
                 {/* Sub-card badge */}

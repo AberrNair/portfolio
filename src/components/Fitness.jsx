@@ -54,6 +54,93 @@ export default function Fitness() {
           </div>
         </div>
 
+        {/* Visual Athletic Conditioning Showcase */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-14">
+          
+          {/* Gym Training Card */}
+          <div className="group bg-[#111827] rounded-card-lg p-4 sm:p-5 border border-amber-500/30 shadow-card-got hover:shadow-card-got-hover hover:-translate-y-1.5 transition-all duration-300">
+            <div className="relative aspect-[4/3] rounded-card overflow-hidden border border-amber-500/25 bg-black mb-4">
+              <img
+                src="/images/abeer_gym_training.jpg"
+                alt="Abeer Nair - Gym Conditioning & Athletic Discipline"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent pointer-events-none" />
+              
+              <div className="absolute top-3 left-3">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/70 border border-amber-500/40 text-[10px] font-cinzel font-bold text-amber-300 backdrop-blur-sm">
+                  <Dumbbell className="w-3 h-3 text-amber-400" />
+                  <span>The Training Forge</span>
+                </span>
+              </div>
+
+              <div className="absolute bottom-3 left-3 right-3 text-left">
+                <p className="font-cinzel font-bold text-base sm:text-lg text-white drop-shadow-md">
+                  Daily Gym Conditioning & Discipline
+                </p>
+                <p className="text-xs text-amber-300/90 font-cinzel mt-0.5">
+                  Building physical endurance & mental stamina
+                </p>
+              </div>
+            </div>
+
+            <div className="px-1">
+              <h4 className="font-cinzel font-bold text-base text-slate-100 group-hover:text-amber-300 transition-colors">
+                The Work Behind the Match
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1.5 leading-relaxed font-body">
+                "Progress comes from showing up every day, not only on match day." Consistent strength and interval training build the baseline required to outlast intense 5-set tournaments.
+              </p>
+              <div className="mt-3 pt-3 border-t border-amber-500/15 flex items-center justify-between text-[11px] font-cinzel text-amber-400">
+                <span>Consistency Over Hype</span>
+                <span>Active 2026</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Physique & Rotational Conditioning Card */}
+          <div className="group bg-[#111827] rounded-card-lg p-4 sm:p-5 border border-amber-500/30 shadow-card-got hover:shadow-card-got-hover hover:-translate-y-1.5 transition-all duration-300">
+            <div className="relative aspect-[4/3] rounded-card overflow-hidden border border-amber-500/25 bg-black mb-4">
+              <img
+                src="/images/abeer_physique_conditioning.jpg"
+                alt="Abeer Nair - Core Stability & Rotational Power"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent pointer-events-none" />
+              
+              <div className="absolute top-3 left-3">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/70 border border-amber-500/40 text-[10px] font-cinzel font-bold text-amber-300 backdrop-blur-sm">
+                  <Flame className="w-3 h-3 text-red-500" />
+                  <span>Kinetic Chain</span>
+                </span>
+              </div>
+
+              <div className="absolute bottom-3 left-3 right-3 text-left">
+                <p className="font-cinzel font-bold text-base sm:text-lg text-white drop-shadow-md">
+                  Rotational Power & Core Stability
+                </p>
+                <p className="text-xs text-amber-300/90 font-cinzel mt-0.5">
+                  Fast hip turns, explosive topspin & injury resilience
+                </p>
+              </div>
+            </div>
+
+            <div className="px-1">
+              <h4 className="font-cinzel font-bold text-base text-slate-100 group-hover:text-amber-300 transition-colors">
+                Kinetic Power for Table Tennis
+              </h4>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1.5 leading-relaxed font-body">
+                Fast-twitch forehands and backhands originate in the legs and core. Targeted posterior chain and trunk conditioning protect against strain and deliver explosive rally power.
+              </p>
+              <div className="mt-3 pt-3 border-t border-amber-500/15 flex items-center justify-between text-[11px] font-cinzel text-amber-400">
+                <span>Explosive Agility</span>
+                <span>Sub-Second Reaction</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         {/* 4 Pillars of Conditioning */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {fitnessData.pillars.map((pillar) => (

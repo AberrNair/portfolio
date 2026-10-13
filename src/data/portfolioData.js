@@ -232,6 +232,14 @@ export const leadershipData = {
   keyTakeaway: "Organising events taught me that good events look effortless only because a team has planned for everything. I enjoy being part of that team."
 };
 
+export const athletePhotos = {
+  heroAction: "/images/table_tennis_match.jpg",
+  gymTraining: "/images/abeer_gym_training.jpg",
+  physiqueConditioning: "/images/abeer_physique_conditioning.jpg",
+  travelPortrait: "/images/abeer_travel_portrait.jpg",
+  cookingDish: "/images/home_cooking_curry.jpg",
+};
+
 export const travelAndCookingData = {
   travel: {
     title: "Travelling and Exploring New Places",
@@ -281,28 +289,32 @@ export const travelAndCookingData = {
   },
   galleryPlaceholders: [
     {
-      category: "Travel Journal",
-      caption: "New Trails & Changing Horizons",
-      sub: "Stepping outside routines & connecting with fellow travellers",
+      image: "/images/abeer_travel_portrait.jpg",
+      category: "Travel Expedition",
+      caption: "Waters, Hills & Changing Horizons",
+      sub: "Stepping outside routines & connecting with people along the way",
       icon: "Mountain"
     },
     {
-      category: "Campfire Flavours",
-      caption: "Spices, Aromas & Regional Recipes",
-      sub: "Balancing precision technique with creative instincts",
+      image: "/images/home_cooking_curry.jpg",
+      category: "Signature Hearth Recipe",
+      caption: "Slow-Simmered Chicken Curry",
+      sub: "Balancing precision spices with culinary instinct and patience",
       icon: "Flame"
     },
     {
-      category: "Travel Journeys",
-      caption: "Cultures, Landscapes & Local Conversations",
-      sub: "Broadening perspectives through spontaneous moments",
-      icon: "MapPin"
+      image: "/images/table_tennis_match.jpg",
+      category: "Table Tennis Tournament",
+      caption: "Match Point in the Arena",
+      sub: "Split-second decisions, focus, and performing under tournament pressure",
+      icon: "Trophy"
     },
     {
-      category: "Home Kitchen",
-      caption: "Cooking for Friends & Bringing People Together",
-      sub: "Sharing food as a universal language of hospitality",
-      icon: "Coffee"
+      image: "/images/abeer_gym_training.jpg",
+      category: "The Training Forge",
+      caption: "Daily Conditioning & Discipline",
+      sub: "Building athletic endurance, rotational power, and mental calmness",
+      icon: "Dumbbell"
     }
   ]
 };
