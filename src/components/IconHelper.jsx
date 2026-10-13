@@ -1,0 +1,76 @@
+import React from 'react';
+import {
+  Trophy,
+  Award,
+  Flame,
+  Users,
+  CalendarCheck,
+  Zap,
+  ShieldAlert,
+  UsersRound,
+  Dumbbell,
+  HeartPulse,
+  Activity,
+  Shield,
+  Cpu,
+  Globe,
+  Compass,
+  Map,
+  Eye,
+  Clock,
+  Sparkles,
+  Utensils,
+  Mountain,
+  Coffee,
+  Calendar,
+  UtensilsCrossed,
+  MapPin,
+  Mail,
+  ArrowUpRight,
+  ChevronRight,
+  ExternalLink,
+  CheckCircle2,
+  Check
+} from 'lucide-react';
+import { LinkedInIcon, GitHubIcon } from './SocialIcons';
+
+const icons = {
+  Trophy,
+  Award,
+  Flame,
+  Users,
+  CalendarCheck,
+  Zap,
+  ShieldAlert,
+  UsersRound,
+  Dumbbell,
+  HeartPulse,
+  Activity,
+  Shield,
+  Cpu,
+  Globe,
+  Compass,
+  Map,
+  Eye,
+  Clock,
+  Sparkles,
+  Utensils,
+  Mountain,
+  Coffee,
+  Calendar,
+  UtensilsCrossed,
+  MapPin,
+  Mail,
+  Linkedin: LinkedInIcon,
+  Github: GitHubIcon,
+  ArrowUpRight,
+  ChevronRight,
+  ExternalLink,
+  CheckCircle2,
+  Check
+};
+
+export default function IconHelper({ name, className = "w-5 h-5", ...props }) {
+  const IconComponent = icons[name] || Trophy;
+  return <IconComponent className={className} {...props} />;
+}
